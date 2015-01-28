@@ -127,3 +127,25 @@ ul li{list-style:none;}
     -ms-transform:skewY(30deg);
     transform:skewY(30deg);
 }
+.menu ul li.matrix a:hover{
+    -moz-transform:matrix(1,1,-1,0,0,0);
+    -webkit-transform:matrix(1,1,-1,0,0,0);
+    -o-transform:matrix(1,1,-1,0,0,0);
+    -ms-transform:matrix(1,1,-1,0,0,0);
+    transform:matrix(1,1,-1,0,0,0);
+}
+.menu ul li.transform-origin a{
+    -moz-transform-origin:left top;
+    -webkit-transform-origin:left top;
+    -o-transform-origin:left top;
+    -ms-transform-origin:left top;
+    transform-origin:left top;
+}
+.menu ul li.demo a{width:100px;padding:5px;background:red;display:block;}
+.menu ul li.demo a:hover{
+    -moz-transform:rotate(45deg) scale(0.8,1.2) skew(60deg,-30deg);
+    -webkit-transform:rotate(45deg) scale(0.8,1.2) skew(60deg,-30deg);
+    -o-transform:rotate(45deg) scale(0.8,1.2) skew(60deg,-30deg);
+    -ms-transform:rotate(45deg) scale(0.8,1.2) skew(60deg,-30deg);
+    transform:rotate(45deg) scale(0.8,1.2) skew(60deg,-30deg);
+}
