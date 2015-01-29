@@ -3,8 +3,29 @@
 <head>
 <meta charset="utf-8">
 <title>CSS3 transition</title>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+ $("#timings-demo-btn").hover(
+	function(){
+	  $(this).next("div#timings-demo").addClass("timings-demo-hover");
+	},function(){
+	  $(this).next("div#timings-demo").removeClass("timings-demo-hover");
+ });
+});
+</script>
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+<div id="timings-demo-btn">Hover Me</div>
+<div id="timings-demo">
+    <div id="ease" class="demo-box">Ease</div>
+    <div id="ease-in" class="demo-box">Ease-in</div>
+    <div id="ease-out" class="demo-box">Ease-out</div>
+    <div id="ease-in-out" class="demo-box">Ease-in-out</div>
+    <div id="linear" class="demo-box">Linear</div>
+    <div id="cubic-bezier" class="demo-box">negative</div>
+</div>
 </body>
 </html>
