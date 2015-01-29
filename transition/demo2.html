@@ -4,6 +4,23 @@
 <meta charset="utf-8">
 <title>Transition Demo 1</title>
 <style>
+h2{text-align:center;}
+.center {
+  text-align: center;
+}
+.hover {
+  cursor: pointer;
+}
+.hover, img {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.shadow {
+  -webkit-box-shadow: 5px 5px 5px #aaa;
+  -moz-box-shadow: 5px 5px 5px #aaa;
+  box-shadow: 5px 5px 5px #aaa;
+  margin-bottom: 10px;
+}
 #timings_demo {
 position:relative;
 width:530px;
@@ -81,6 +98,7 @@ background-color:#fff;
 </head>
 
 <body>
+<h2>Different timing functions</h2>
 <div id="timings_demo" class="shadow hover">
   <div id="ease" class="test_box"><p>Ease</p></div>
   <div id="ease-in" class="test_box"><p>Ease<br>In</p></div>
