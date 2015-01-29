@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Transition Demo 1</title>
+<style>
+#timings_demo {
+position:relative;
+width:530px;
+height:530px;
+margin:0 auto 10px;
+border:1px #aaa solid;
+padding:10px;
+}
+.test_box {
+font-size:12px;
+position:relative;
+width:60px;
+height:60px;
+margin-bottom:10px;
+background-color:#eee;
+}
+.test_box p {
+text-align:center;
+padding-top:4px;
+}
+#ease.test_box {
+-webkit-transition: all 4s ease;
+-moz-transition: all 4s ease;
+-o-transition: all 4s ease;
+transition: all 4s ease;    border:1px #f00 solid;
+}
+#ease-in.test_box {
+-webkit-transition: all 4s ease-in;
+-moz-transition: all 4s ease-in;
+-o-transition: all 4s ease-in;
+transition: all 4s ease-in;    border:1px #0f0 solid;
+}
+#ease-out.test_box {
+-webkit-transition: all 4s ease-out;
+-moz-transition: all 4s ease-out;
+-o-transition: all 4s ease-out;
+transition: all 4s ease-out;    border:1px #00f solid;
+}
+#ease-in-out.test_box {
+-webkit-transition: all 4s ease-in-out;
+-moz-transition: all 4s ease-in-out;
+-o-transition: all 4s ease-in-out;
+transition: all 4s ease-in-out;    border:1px #ff0 solid;
+}
+#linear.test_box {
+-webkit-transition: all 4s linear;
+-moz-transition: all 4s linear;
+-o-transition: all 4s linear;
+transition: all 4s linear;    border:1px #f0f solid;
+}
+#custom.test_box {
+-webkit-transition: all 4s cubic-bezier(1.000, 0.835, 0.000, 0.945);
+-moz-transition: all 4s cubic-bezier(1.000, 0.835, 0.000, 0.945);
+-o-transition: all 4s cubic-bezier(1.000, 0.835, 0.000, 0.945);
+transition: all 4s cubic-bezier(1.000, 0.835, 0.000, 0.945);    border:1px #0ff solid;
+}
+#negative.test_box {
+-webkit-transition: all 4s cubic-bezier(1.000, -0.530, 0.405, 1.425);
+-moz-transition: all 4s cubic-bezier(1.000, -0.530, 0.405, 1.425);
+-o-transition: all 4s cubic-bezier(1.000, -0.530, 0.405, 1.425);
+transition: all 4s cubic-bezier(1.000, -0.530, 0.405, 1.425);    border:1px #000 dotted;
+}
+#timings_demo:hover .test_box, #timings_demo.hover_effect .test_box {
+-webkit-border-radius:30px;
+-moz-border-radius:30px;
+border-radius:30px;
+-webkit-transform: rotate(720deg);
+-moz-transform: rotate(720deg);
+-o-transform: rotate(720deg);
+-ms-transform: rotate(720deg);
+transform: rotate(720deg);    margin-left:420px;
+background-color:#fff;
+}
+</style>
+</head>
+
+<body>
+<div id="timings_demo" class="shadow hover">
+  <div id="ease" class="test_box"><p>Ease</p></div>
+  <div id="ease-in" class="test_box"><p>Ease<br>In</p></div>
+  <div id="ease-out" class="test_box"><p>Ease<br>Out</p></div>
+  <div id="ease-in-out" class="test_box"><p>Ease<br>In Out</p></div>
+  <div id="linear" class="test_box"><p>Linear</p></div>
+  <div id="custom" class="test_box"><p>Custom</p></div>
+  <div id="negative" class="test_box"><p>Awesome!</p></div>
+  <p class="center"> Hover on me</p>
+</div>
+</body>
+</html>
