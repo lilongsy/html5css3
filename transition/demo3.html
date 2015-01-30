@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Demo 3</title>
+</head>
+
+<body>
+<style>
+.fade-link{color:#F00;transition:color 2s linear;}
+.fade-link:hover{color:#000;}
+</style>
+<h2>Fading Links</h2>
+Look at the really cool <a class="fade-link" href="#">test link</a>.
+<h2>Fading Buttons</h2>
+<style>
+.btn{transition:all 2s linear;background-color:#FFF;color:#000;border:1px solid #ccc;box-shadow: 0px 0px 3px #212121;}
+.btn:hover{border-radius:3px;box-shadow:0px 0px 10px #000;}
+</style>
+<button class="btn">Really Cool Button</button>
+<h2>Increasing Box Size</h2>
+<style>
+.textarea{transition:all 1s linear;height:30px;}
+.textarea:focus{height:50px;}
+</style>
+<textarea class="textarea"></textarea>
+<h2>Brief Animation</h2>
+<style>
+.container{width:300px;height:500px;position:relative;border:1px solid #333;}
+.container .box{position:absolute;width:20px;height:20px;bottom:0;left:0;transition:all 2s linear;background:#F66;}
+.container:hover .box{/*left:280px;bottom:480px;*/transform:translate(200px,-200px);}
+</style>
+<div class="container">
+<div class="box"></div>
+</div>
+</body>
+</html>
